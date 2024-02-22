@@ -1,0 +1,140 @@
+/* Write your CSS here */
+
+.main-bg {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+}
+
+.result-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .result-container {
+    flex-direction: column;
+  }
+}
+
+.top-half-container {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .top-half-container {
+    width: 100%;
+  }
+}
+
+.timer-container {
+  width: 35%;
+  height: 35%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  color: #00d9f5;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.timer-status {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.bottom-half-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-reset-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-reset-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.play-reset-btn {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-image {
+  width: 48px;
+}
+
+.btn-text {
+  color: #0f172a;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timer-limit-container {
+  color: #0f172a;
+  font-size: 18px;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.timer-limit {
+  width: 80px;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-image: linear-gradient(to right, #35e71e, #00d9f5);
+}
